@@ -1,0 +1,61 @@
+<dds>
+    <permissions>
+        <grant name="PublisherPermissions">
+
+            <subject_name>CN=Publisher</subject_name>
+
+            <validity>
+                <not_before>2024-01-01T00:00:00</not_before>
+                <not_after>2030-01-01T00:00:00</not_after>
+            </validity>
+
+            <allow_rule>
+                <domains>
+                    <id>0</id>
+                </domains>
+
+                <publish>
+                    <topics>
+                        <topic>.*</topic>
+                    </topics>
+                </publish>
+
+                <subscribe>
+                    <topics>
+                        <topic>.*</topic>
+                    </topics>
+                </subscribe>
+            </allow_rule>
+
+        </grant>
+
+        <grant name="SubscriberPermissions">
+
+            <subject_name>CN=Subscriber</subject_name>
+
+            <validity>
+                <not_before>2024-01-01T00:00:00</not_before>
+                <not_after>2030-01-01T00:00:00</not_after>
+            </validity>
+
+            <allow_rule>
+                <domains>
+                    <id>0</id>
+                </domains>
+
+                <publish>
+                    <topics>
+                        <topic>.*</topic>
+                    </topics>
+                </publish>
+
+                <subscribe>
+                    <topics>
+                        <topic>.*</topic>
+                    </topics>
+                </subscribe>
+            </allow_rule>
+
+        </grant>
+    </permissions>
+</dds>
